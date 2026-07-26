@@ -1,0 +1,245 @@
+/* Importando fonte bonita */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Configuração geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#e8ffe8,#fff0f8);
+    color: #333;
+}
+
+/* ===========================
+        TÍTULO PRINCIPAL
+=========================== */
+
+h1{
+    background: linear-gradient(90deg,#a0f1a3,#03810e);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+/* ===========================
+          PARÁGRAFO
+=========================== */
+
+p{
+    width: 85%;
+    margin: 35px auto;
+    font-size: 19px;
+    line-height: 1.8;
+    text-align: justify;
+
+    background: white;
+    padding: 25px;
+    border-left: 8px solid #369c5d;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+/* ===========================
+       IMAGEM PRINCIPAL
+=========================== */
+
+body > img{
+
+    display: block;
+    margin: auto;
+
+    width: 700px;
+    max-width: 90%;
+
+    border-radius: 20px;
+
+    border:6px solid white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+    transition:.5s;
+}
+
+body > img:hover{
+
+    transform: scale(1.03);
+
+}
+
+/* ===========================
+        CAIXAS DAS ALFACES
+=========================== */
+
+.imagens{
+
+    display:flex;
+    justify-content:center;
+
+    margin:50px;
+
+}
+
+.lado-esquerdo,
+.lado-direito{
+
+    width:900px;
+    max-width:95%;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.lado-esquerdo:hover,
+.lado-direito:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+          SUBTÍTULO
+=========================== */
+
+h2{
+
+    color:#04a650;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.lado-esquerdo img,
+.lado-direito img{
+
+    width:300px;
+
+    border-radius:15px;
+
+    border:5px solid #00e622;
+
+    margin:20px;
+
+    transition:.4s;
+
+}
+
+.lado-esquerdo img:hover,
+.lado-direito img:hover{
+
+    transform:rotate(-2deg) scale(1.08);
+
+}
+h4{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    font-weight:400;
+
+}
+
+button{
+
+    background:linear-gradient(90deg,#a7f6aa,#026d2b);
+
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    margin:40px;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+      BARRA DECORATIVA
+=========================== */
+
+.lado-esquerdo::before,
+.lado-direito::before{
+
+    content:"🌱 Pink Farm";
+
+    display:block;
+
+    color:#4fff67;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================
+      RESPONSIVIDADE
+=========================== */
+
+@media(max-width:800px){
+
+    h1{
+        font-size:30px;
+    }
+
+    p{
+        width:95%;
+        font-size:17px;
+    }
+
+    .lado-esquerdo,
+    .lado-direito{
+        width:95%;
+    }
+
+    .lado-esquerdo img,
+    .lado-direito img{
+        width:220px;
+    }
+
+}
